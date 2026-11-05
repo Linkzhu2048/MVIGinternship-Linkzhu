@@ -1,0 +1,29 @@
+# 声明 ACT 训练包、内置网络和命令行入口，不依赖其他项目源码。
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "i2rt-act"
+version = "0.2.0"
+description = "独立的双腕图像与双臂状态 ACT 训练项目"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "torch==2.6.0",
+  "torchvision==0.21.0",
+  "numpy>=1.26,<3",
+  "h5py>=3.11,<4",
+  "pillow>=10,<13"
+]
+
+[project.scripts]
+i2rt-act-train = "i2rt_act.train:main"
+i2rt-act-check = "i2rt_act.check_data:main"
+i2rt-act-export = "i2rt_act.export:main"
+
+[tool.setuptools]
+packages = ["i2rt_act", "i2rt_act_vendor", "i2rt_act_vendor.detr", "i2rt_act_vendor.detr.models"]
+package-dir = {i2rt_act = "src", i2rt_act_vendor = "vendor"}
+
+[tool.setuptools.package-data]
+i2rt_act_vendor = ["LICENSE", "UPSTREAM_FILES.json"]

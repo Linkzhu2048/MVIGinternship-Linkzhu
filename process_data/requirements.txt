@@ -1,0 +1,10 @@
+# 数据处理依赖；不安装机器人 SDK、CUDA、PyTorch 或训练网络。
+numpy>=1.26,<3
+opencv-python-headless>=4.8,<5
+Pillow>=10,<13
+imageio-ffmpeg>=0.5,<0.7
+h5py>=3.10,<4
+mcap>=1.2,<2
+protobuf>=4.25,<7
+pyarrow>=17,<21
+datasets==3.6.0

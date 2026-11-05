@@ -1,0 +1,103 @@
+{
+  "repository": "https://github.com/Physical-Intelligence/openpi",
+  "note": "保留实际使用的 JAX 路径；裁剪未使用功能、补充中文注释，分词器和权重改为显式本地路径。原始散列标识迁移时的参考文件，不表示逐字未修改。 另移除未使用的合成小模型和 LoRA 变体注册；lora.py 内基础层仍为当前 Gemma 所必需。",
+  "files": {
+    "vendor/models/pi0.py": {
+      "source": "src/openpi/models/pi0.py",
+      "original_sha256": "24b32d7c6ed5e409459afa8ca5af96a4dae09c2dcdf48e828907e411f4f12342",
+      "vendored_sha256": "93709b8234c7d2fec50e46d3f97988326887dbecfbeee4678827e58ab32051d9"
+    },
+    "vendor/models/gemma.py": {
+      "source": "src/openpi/models/gemma.py",
+      "original_sha256": "7e42ada4ae7e9995f0ef3e33a0c224758323c2015e2d9d72ec15726a8a001d2a",
+      "vendored_sha256": "817b3efca36e314567bfb7d7beb7ab072ede25777ec99df3d2aad52255cf0ec0"
+    },
+    "vendor/models/siglip.py": {
+      "source": "src/openpi/models/siglip.py",
+      "original_sha256": "14b4df0be280d5769fb0dc31a40cde27525dbb1980cc998c28475d62fa3cad32",
+      "vendored_sha256": "ed82acfc4c31c9ff23aa0391e5b4424c67c3eac112956aed10e6d40d0154c0e0"
+    },
+    "vendor/models/lora.py": {
+      "source": "src/openpi/models/lora.py",
+      "original_sha256": "ced28716950c34d84a1a6d0b03b1d9550000732721df884818080b6e78cb3289",
+      "vendored_sha256": "13bcd16a67a5d9268bb527257a240072df6754a5f95beb4b26b8d97484e4d75c"
+    },
+    "vendor/shared/array_typing.py": {
+      "source": "src/openpi/shared/array_typing.py",
+      "original_sha256": "6524945566eab3eb97b75a6280ba4724617b4d028c55f05172b283c3de68a026",
+      "vendored_sha256": "a2bc4922416bb5e7896e4d44d72e013f7c8234f32bec482e02c694121fa669f2"
+    },
+    "vendor/shared/nnx_utils.py": {
+      "source": "src/openpi/shared/nnx_utils.py",
+      "original_sha256": "4da7111ba3011c4d1c381c9ed17257771df6a50ed89182647c3fb6f79208005e",
+      "vendored_sha256": "79dba7ba45f8b2eb638f12b0f054c38b6aa8db058d8f248de5bc4a231b18e18c"
+    },
+    "vendor/training/sharding.py": {
+      "source": "src/openpi/training/sharding.py",
+      "original_sha256": "c67c4112a126ab097571c8a882fd1ee3f106b15b6e608e7205ac7f29b44ca985",
+      "vendored_sha256": "2d2afbcdb058152288b9aeef883c06f886b710ef9e24f6c94868460c69fc7276"
+    },
+    "vendor/training/utils.py": {
+      "source": "src/openpi/training/utils.py",
+      "original_sha256": "b684e674343f86ef5e976f279a586d3fe2f885e901f396ac899ed136abc7eca6",
+      "vendored_sha256": "7d1e82411fd0915c7a5fe6cee3ed5e8e78082063a8abf2f8ed3df31991f40f33"
+    },
+    "vendor/models/model.py": {
+      "source": "src/openpi/models/model.py",
+      "original_sha256": "0d74bc1d8f4623ac3d8e543710b8bf75f9b95e588a3ebf6127c659e001385cff",
+      "vendored_sha256": "a34ee26b982bf62824bab75b201157eac8df273fe93a1c1a4e0abf2746573484"
+    },
+    "vendor/models/pi0_config.py": {
+      "source": "src/openpi/models/pi0_config.py",
+      "original_sha256": "d321858c30b398126035ea2b6da09e1c422eeeebb5ebf8df631daf9dc77647fa",
+      "vendored_sha256": "becd9a1381a7c5935360fca22c2c1512cd99a7cac436a668ef89e76dfae00100"
+    },
+    "vendor/models/tokenizer.py": {
+      "source": "src/openpi/models/tokenizer.py",
+      "original_sha256": "965be8b3c393a6811875bbc32da9e01a5d01cc2f87802de801cf7293e049748c",
+      "vendored_sha256": "0b8596772a225d6304d9f30795b31b2086aede7e35711e993f1c406ee8f68090"
+    },
+    "vendor/shared/image_tools.py": {
+      "source": "src/openpi/shared/image_tools.py",
+      "original_sha256": "0f8fcb355288119e56acb56d550c1cc1f3a9edddceb0dc5b319f955943ef7767",
+      "additional_source": "packages/openpi-client/src/openpi_client/image_tools.py",
+      "additional_original_sha256": "d48b4bd7f44e79fe6db8a8e07c9161144fa250be686e1245014a8b47e6171977",
+      "vendored_sha256": "2723beca4c1a1b81ffb24ac8be0b3dec8b3d9ed33922c24941b9e7da8137b988"
+    },
+    "vendor/transforms.py": {
+      "source": "src/openpi/transforms.py",
+      "original_sha256": "a1b94e9e72849a18834778f229c6bb389a495eb7fbe0aa800edea728b9424ff4",
+      "vendored_sha256": "8dae78af011a806597178eb888da4780a4e121e47064ceeaf50a4c65505004e5"
+    },
+    "vendor/shared/normalize.py": {
+      "source": "src/openpi/shared/normalize.py",
+      "original_sha256": "6c2cea4946fb07e51801530400d2b2fd94730e195cd290d6b6960114eca9739d",
+      "vendored_sha256": "2a245f44e3906b44e4684f0d241693013d9180b1966a4fc110c759f99edd28b2"
+    },
+    "vendor/training/optimizer.py": {
+      "source": "src/openpi/training/optimizer.py",
+      "original_sha256": "cfb5d6f6aec61fbe961287b4015c652260628a0ed4682a0dbdc271b8e65431fa",
+      "vendored_sha256": "6dd28e639e8bfbdc7fb9d7dc0bd9c8e3b7be84c50c37040932584c519364c14e"
+    },
+    "vendor/training/weight_loaders.py": {
+      "source": "src/openpi/training/weight_loaders.py",
+      "original_sha256": "a54ac3222f81f8c6233241bc16b6f369c9416cdaa83f7058f96f7ddcfde1a3b4",
+      "vendored_sha256": "450180583eff6a9d2c932454a12d7293b04a3acbb53364420f957152485d337a"
+    },
+    "vendor/training/checkpoints.py": {
+      "source": "src/openpi/training/checkpoints.py",
+      "original_sha256": "3cc32682ec3609e9075dabd991488edb9d7f6c045443f58963d733f99c468dbd",
+      "vendored_sha256": "6b4c8fc36ebd903fae9e0497d29e428ba18933e3d8ad4a47df8ac3c95d8075e3"
+    },
+    "src/train.py": {
+      "source": "scripts/train.py",
+      "original_sha256": "22f98a06aaa6e68e0f725d727ab95398238d1cae8a46bb94e829f330758a9baf",
+      "retained_functions": [
+        "_load_weights_and_validate",
+        "init_train_state",
+        "train_step"
+      ],
+      "vendored_sha256": "f7ef6d0b3d044c9bd4314a1d0a0ff1a6cfd7551696d617c0d1e1ed4dfd66ebe8"
+    }
+  }
+}

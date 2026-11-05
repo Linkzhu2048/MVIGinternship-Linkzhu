@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "dataset_id": "five_blocks_into_cup",
+  "repo_id": "local/five_blocks_into_cup",
+  "prompt": "Put all five blocks into the cup.",
+  "fps": 30,
+  "image_size_wh": [640, 480],
+  "max_age_ms": {"camera": 100, "joints": 50, "gripper": 100},
+  "action": {
+    "scale": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "offset": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "time_offset_ms": 0,
+    "mapping_note": "示例为同向映射；使用前请按采集时的遥操作配置核对方向与偏置。"
+  },
+  "split": {"seed": 20261023, "validation_fraction": 0.2},
+  "normalization_std_floor": 0.01,
+  "short_episode_seconds": 20,
+  "alignment_exceptions": [],
+  "pi05": {"action_horizon": 50, "split": "all_train"}
+}

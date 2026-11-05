@@ -1,0 +1,44 @@
+{
+  "name": "act",
+  "data_dir": "dataset",
+  "assets_dir": "dataset/training_assets",
+  "model": {
+    "camera_names": [
+      "left_wrist",
+      "right_wrist"
+    ],
+    "state_dim": 14,
+    "action_dim": 14,
+    "chunk_size": 100,
+    "hidden_dim": 512,
+    "dim_feedforward": 3200,
+    "enc_layers": 4,
+    "dec_layers": 7,
+    "nheads": 8,
+    "dropout": 0.1,
+    "backbone": "resnet18",
+    "pretrained_backbone": true,
+    "kl_weight": 10.0
+  },
+  "data": {
+    "image_size_hw": [
+      480,
+      640
+    ]
+  },
+  "training": {
+    "strategy": "official_epoch",
+    "seed": 0,
+    "device": "cuda",
+    "batch_size": 8,
+    "num_workers": 1,
+    "num_epochs": 5000,
+    "lr": 1e-05,
+    "lr_backbone": 1e-05,
+    "weight_decay": 0.0001,
+    "save_interval_epochs": 100,
+    "val_batch_size": 8,
+    "max_val_batches": null,
+    "torch_threads": 4
+  }
+}

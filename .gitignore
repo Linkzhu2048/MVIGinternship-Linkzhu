@@ -1,0 +1,39 @@
+# 数据、权重和运行输出留在本机，仅保留空目录占位。
+**/dataset/*
+!**/dataset/.gitkeep
+**/output/*
+!**/output/.gitkeep
+**/pretrained/*
+!**/pretrained/.gitkeep
+envs/
+.venv/
+venv/
+*.hdf5
+*.h5
+*.mcap
+*.parquet
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+
+# Python 构建产物和缓存。
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# 本机凭据、日志和系统元数据。
+.env
+.env.*
+!.env.example
+.local/
+*.log
+*.pem
+*.key
+*Zone.Identifier*
+.DS_Store
+Thumbs.db

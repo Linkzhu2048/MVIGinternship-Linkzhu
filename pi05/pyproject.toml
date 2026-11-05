@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "i2rt-pi05"
+version = "0.2.0"
+description = "I2RT 双腕 π0.5 JAX 微调与模型导出"
+requires-python = ">=3.11,<3.12"
+readme = "README.md"
+
+[tool.setuptools]
+packages = ["i2rt_pi05", "openpi", "openpi.models", "openpi.shared", "openpi.training"]
+package-dir = {i2rt_pi05 = "src", openpi = "vendor"}
+include-package-data = true
+
+[tool.setuptools.package-data]
+openpi = ["LICENSE", "LICENSE_GEMMA.txt", "UPSTREAM_FILES.json"]

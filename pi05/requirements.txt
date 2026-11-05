@@ -1,0 +1,50 @@
+# Linux / Python 3.11；先单独安装 CPU Torch，JAX 负责 GPU 训练。
+jax[cuda12]==0.5.3
+flax==0.10.2
+optax==0.2.4
+orbax-checkpoint==0.11.13
+numpy==1.26.4
+ml-dtypes==0.4.1
+tensorstore==0.1.74
+chex==0.1.90
+augmax==0.4.1
+equinox==0.12.2
+einops==0.8.1
+beartype==0.19.0
+jaxtyping==0.2.36
+numpydantic==1.6.9
+pydantic==2.11.5
+sentencepiece==0.2.0
+etils==1.12.2
+filelock==3.18.0
+google-crc32c==1.7.1
+pillow==11.2.1
+datasets==3.6.0
+pyarrow==20.0.0
+fsspec==2025.3.0
+huggingface-hub==0.32.3
+torch==2.7.1
+torchvision==0.22.1
+torchcodec==0.4.0
+opencv-python-headless==4.11.0.86
+av==17.0.0
+rerun-sdk==0.23.1
+zarr==3.0.8
+lerobot @ https://github.com/huggingface/lerobot/archive/0cf864870cf29f4738d3ade893e6fd13fbd7cdb5.zip
+
+# 固定原训练环境的 CUDA 12 运行库，避免随上游默认版本漂移。
+nvidia-cublas-cu12==12.6.4.1
+nvidia-cuda-cupti-cu12==12.6.80
+nvidia-cuda-nvcc-cu12==12.9.41
+nvidia-cuda-runtime-cu12==12.6.77
+nvidia-cudnn-cu12==9.5.1.17
+nvidia-cufft-cu12==11.3.0.4
+nvidia-cusolver-cu12==11.7.1.2
+nvidia-cusparse-cu12==12.5.4.2
+nvidia-nccl-cu12==2.26.2
+nvidia-nvjitlink-cu12==12.6.85
+# 固定 LeRobot 读取器带入的主要依赖，避免解析到较新且不兼容的版本。
+diffusers==0.33.1
+numba==0.61.2
+pymunk==7.0.0
+wandb==0.19.11

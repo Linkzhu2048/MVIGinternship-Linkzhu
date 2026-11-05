@@ -1,0 +1,26 @@
+[
+  {
+    "file": "detr/models/detr_vae.py",
+    "upstream_sha256": "499d968a3704156e5e29425a29691c3fa93421481d3609ed6b600b21801270f1",
+    "source": "https://github.com/tonyzhaozh/act",
+    "modifications": "保留 ACT 网络与权重名称；整理中文注释，删除未使用的 CNNMLP 和可学习图像位置编码分支。"
+  },
+  {
+    "file": "detr/models/backbone.py",
+    "upstream_sha256": "dec9770e496e2deb56f694e622a15d01ea3bdea977c2446fb3c41bc18cf4ed55",
+    "source": "https://github.com/tonyzhaozh/act",
+    "modifications": "保留 ACT 网络与权重名称；整理中文注释，删除未使用的 CNNMLP 和可学习图像位置编码分支。"
+  },
+  {
+    "file": "detr/models/position_encoding.py",
+    "upstream_sha256": "5a8f62c66fc7ec66e862bdfe96e122098b93a688fbed514460990c74fa307151",
+    "source": "https://github.com/tonyzhaozh/act",
+    "modifications": "保留 ACT 网络与权重名称；整理中文注释，删除未使用的 CNNMLP 和可学习图像位置编码分支。"
+  },
+  {
+    "file": "detr/models/transformer.py",
+    "upstream_sha256": "c6d2a1e7138e6ca62db7cc61bfc99857fb2a3a9375ba7b304310ca264f357ee2",
+    "source": "https://github.com/tonyzhaozh/act",
+    "modifications": "保留 ACT 网络与权重名称；整理中文注释，删除未使用的 CNNMLP 和可学习图像位置编码分支。"
+  }
+]
