@@ -9,6 +9,7 @@
 ```text
 MVIGinternship-Linkzhu-main/
 ├── README.md               # 项目总览、使用顺序和开发约定
+├── poster.pdf              # 项目成果展示海报
 ├── process_data/           # NEDF3 可视化、质量检查、时间对齐与格式转换
 │   ├── dataset/            # 使用者放入原始 episode，初始为空
 │   └── output/             # 生成视频、报告、HDF5 或 LeRobot 数据
@@ -94,5 +95,7 @@ process_data/output/lerobot/ → pi05/dataset/
 导出的模型统一使用 ZIP。ACT 的 `.ckpt` 是 PyTorch 权重文件，无需改名为 `.pt`；π0.5 的权重为 Orbax 参数目录及分片。后续使用模型时需同时保留配置、归一化统计，以及 π0.5 的分词器，不能只取一个权重分片。
 
 ## 展示与验证状态
+
+项目成果海报见 [poster.pdf](poster.pdf)，介绍任务、数据采集、模型选择、部署管线与结果分析。
 
 `demo/` 已包含 ACT 与 π0.5 的演示视频、关键帧和展示拼图，具体内容见 [演示说明](demo/README.md)。这些演示用于展示任务现象，仓库暂不填写未经统计的任务成功率或受控模型比较结论。
